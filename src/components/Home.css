@@ -1,4 +1,10 @@
-.search{
-    display:flex;
-    justify-content: center;
+.search {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.create_post {
+  position: relative;
 }
