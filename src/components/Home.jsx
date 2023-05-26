@@ -1,9 +1,15 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
+import './Home.css'
+import {GoSearch} from 'react-icons/go'
+import NavBar from "./NavBar";
+=======
 import "./Home.css";
 import { GoSearch } from "react-icons/go";
 import NavBar from "./NavBar";
 
 import Post from "./Post.jsx";
+>>>>>>> 65fbaddbf80fd4d0fd01bb49df8e9181b720a5f0
 
 const Home = () => {
   const [searchQuery, setSearch] = useState("");
@@ -21,6 +27,23 @@ const Home = () => {
   };
 
   return (
+<<<<<<< HEAD
+    <div className="Home">
+      <NavBar />
+      <div className="Main">
+        <div className = "search">
+          <input
+            className = "search-input"
+            type="text"
+            value={searchQuery}
+            onChange ={handleSearch}
+            placeholder="Search..."
+          />
+          <button className = "search-btn" onClick={handleSearch}>
+            <GoSearch />
+          </button>
+
+=======
     <>
       <div className="Home">
         <NavBar />
@@ -40,6 +63,7 @@ const Home = () => {
             <Post />
           </div>
 
+>>>>>>> 65fbaddbf80fd4d0fd01bb49df8e9181b720a5f0
           {/* Render the filtered results */}
           <ul>
             {filterData.map((item) => (
@@ -48,7 +72,11 @@ const Home = () => {
           </ul>
         </div>
       </div>
+<<<<<<< HEAD
+    </div>
+=======
     </>
+>>>>>>> 65fbaddbf80fd4d0fd01bb49df8e9181b720a5f0
   );
 };
 
