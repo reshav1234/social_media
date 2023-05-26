@@ -1,8 +1,10 @@
 .navbar {
+  background: red;
   display: flex;
   justify-content: flex-end;
   gap: 1%;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .dropdown-menu {

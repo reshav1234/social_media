@@ -12,34 +12,42 @@ const NavBar = () => {
   return (
     <>
       <nav className="navbar">
-        <RiHome3Fill onClick={isLinkClicked} />
-        {isDropdownOpen && (
-          <div className="dropdown-menu">
-            <a href="#">Dropdown Item 1</a>
-            <a href="#">Dropdown Item 2</a>
-            <a href="#">Dropdown Item 3</a>
-          </div>
-        )}
 
-        <RiChat2Fill onClick={isLinkClicked} />
+        <div>
+         <h1>LOGO</h1>
+        </div>
 
-        {isDropdownOpen && (
-          <div className="dropdown-menu">
-            <a href="#">Dropdown Item 1</a>
-            <a href="#">Dropdown Item 2</a>
-            <a href="#">Dropdown Item 3</a>
-          </div>
-        )}
+        <div>
+          <RiHome3Fill onClick={isLinkClicked} />
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              <a href="#">Dropdown Item 1</a>
+              <a href="#">Dropdown Item 2</a>
+              <a href="#">Dropdown Item 3</a>
+            </div>
+          )}
 
-        <RiAccountBoxFill onClick={isLinkClicked} />
+          <RiChat2Fill onClick={isLinkClicked} />
 
-        {isDropdownOpen && (
-          <div className="dropdown-menu">
-            <a href="#">Dropdown Item 1</a>
-            <a href="#">Dropdown Item 2</a>
-            <a href="#">Dropdown Item 3</a>
-          </div>
-        )}
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              <a href="#">Dropdown Item 1</a>
+              <a href="#">Dropdown Item 2</a>
+              <a href="#">Dropdown Item 3</a>
+            </div>
+          )}
+
+          <RiAccountBoxFill onClick={isLinkClicked} />
+
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              <a href="#">Dropdown Item 1</a>
+              <a href="#">Dropdown Item 2</a>
+              <a href="#">Dropdown Item 3</a>
+            </div>
+          )}
+        </div>
+        
       </nav>
     </>
   );
