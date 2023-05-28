@@ -6,7 +6,6 @@ import NavBar from "./NavBar";
 
 import Post from "./Post.jsx";
 
-
 const Home = () => {
   const [searchQuery, setSearch] = useState("");
   const [filterData, setFilter] = useState([]);
@@ -22,36 +21,36 @@ const Home = () => {
     console.log(e.target.value);
   };
 
-return (
-  <div className="Home">
-    <NavBar />
-    <div className="Main">
-      <div className = "search">
-        <input
-          className = "search-input"
-          type="text"
-          value={searchQuery}
-          onChange ={handleSearch}
-          placeholder="Search..."
-        />
-        <button className = "search-btn" onClick={handleSearch}>
-          <GoSearch />
-        </button>
+  return (
+    <div className="Home">
+      <NavBar />
+      <div className="Main">
+        <div className="search-container">
+          <input
+            className="search-input"
+            type="text"
+            value={searchQuery}
+            onChange={handleSearch}
+            placeholder="Search..."
+          />
+          <button className="search-btn" onClick={handleSearch}>
+            <GoSearch />
+          </button>
 
-        <div className="create_post">
-            <Post />
+          {/* Render the filtered results */}
+          <ul>
+            {filterData.map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+          </ul>
         </div>
 
-        {/* Render the filtered results */}
-        <ul>
-          {filterData.map((item) => (
-            <li key={item.id}>{item.name}</li>
-          ))}
-        </ul>
+        <div className="create_post">
+          <Post />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Home;

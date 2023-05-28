@@ -1,26 +1,53 @@
-.Home{
+.Home {
   height: 100%;
 }
 
-.Main{
+.Main {
   height: 100%;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #b2e0df;
+  align-items: center;
 }
 
-.search-input{
-  margin-right: 5px;
-  text-align: center;
-  border-radius: 15px;
+.search-container {
+  background: #fff;
+
   height: 30px;
-  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2);
+}
+.search-container:hover > .search-input {
+  width: 200px;
 }
 
-.search-btn{
-  height: 33px;
-  border-radius: 5px;
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn {
+  color: #5cbdbb;
+  background: transparent;
+  border: none;
 }
 
 .create_post {
-  position: relative;
+  margin-top: 10rem;
+  align-items: center;
 }
