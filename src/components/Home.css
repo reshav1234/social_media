@@ -5,6 +5,7 @@
 .Main {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -47,7 +48,10 @@
   border: none;
 }
 
+.search-container.search-clicked .search-input {
+  width: 200px;
+}
+
 .create_post {
-  margin-top: 10rem;
   align-items: center;
 }
