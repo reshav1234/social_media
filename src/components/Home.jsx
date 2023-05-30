@@ -4,7 +4,7 @@ import "./Home.css";
 import { GoSearch } from "react-icons/go";
 import NavBar from "./NavBar";
 
-import Post from "./Post.jsx";
+import Post from "./Post/Post.jsx";
 const Home = () => {
   const [searchQuery, setSearch] = useState("");
   const [filterData, setFilter] = useState([]);
