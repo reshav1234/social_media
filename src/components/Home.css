@@ -1,5 +1,6 @@
 .Home {
   height: 100%;
+  background-color: antiquewhite;
 }
 
 .Main {
@@ -9,7 +10,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: #b2e0df;
+  background-color:antiquewhite;
   align-items: center;
 }
 
