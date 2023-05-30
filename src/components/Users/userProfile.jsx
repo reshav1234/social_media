@@ -1,9 +1,26 @@
-import React from 'react'
+import {useState} from 'react'
 
-const userProfile = () => {
+const UserProfile = () => {
+    const user_details = [
+        {
+            'name':'Reshav',
+            'contact': 1,
+            'id': 1,
+        },
+        {
+            'name':"tarjan",
+            'contact':3,
+            'id':3
+        }
+    ]
   return (
-    <div>userProfile</div>
+    <>
+        <div>
+            {user_details.map((user) =>{user.id})}
+        </div>
+    </>
+
   )
 }
 
-export default userProfile
+export default UserProfile
