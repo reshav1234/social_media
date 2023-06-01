@@ -1,0 +1,71 @@
+.Register{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.register--body{
+    border-radius: 10px;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .4);
+}
+
+.form{
+    width: 350px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+form > input{
+    margin-bottom: 14px;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form > button{
+    font-size: 1rem;
+    padding: 16px 20px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    background-color: #FB9818;
+}
+
+.media--logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+}
+
+.media--logo >img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.profile-photo{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.profile-photo > label{
+    cursor: pointer;
+}
+
