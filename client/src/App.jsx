@@ -1,4 +1,4 @@
-import React from "react";
+import {useState, useEffect} from "react";
 import "./App.css";
 import Home from "../src/components/Home.jsx";
 import Login from "../src/components/Login:signup/Login.jsx";
@@ -7,8 +7,19 @@ import UserProfile from '../src/components/Users/UserProfile'
 import UserList from "./components/Users/userList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 const App = () => {
+  const [backEndData, setBackEndData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {setBackEndData(data)}
+    )
+  }, [])
   return (
+    <div>
     <Router>
       <div className="App">
         <Routes>
@@ -20,6 +31,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 };
 

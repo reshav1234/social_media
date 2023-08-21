@@ -4,11 +4,10 @@ function UserList() {
   const [data, setData] = useState([{}]);
 
   useEffect(() => {
-    fetch('/api')
-      .then(res => res.json())
-      .then(data => {
+    fetch('/api').then(
+      response => response.json()
+      ).then(data => 
         setData(data)
-      }
     );
   }, []);
 

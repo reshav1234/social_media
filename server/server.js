@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 
-// Define an API endpoint to retrieve the names
-app.get('/api', (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-  res.json({'users':['reshav', 'bruno']});
-});
+
+app.use('/api/users',require('./routes/apiRoutes'))
+
 
 // Start the server
 app.listen(PORT, () => {
