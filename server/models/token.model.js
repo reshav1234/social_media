@@ -16,6 +16,11 @@ const tokenSchema = new Schema(
         accessToken:{
             type:String,
             required:true,
+        },
+        createdAt:{
+            type:Date,
+            default:Date.now,
+            expires: 6*60*60,
         }
     }
 )
